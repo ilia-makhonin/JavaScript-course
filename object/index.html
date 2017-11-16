@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function distribution(number) {      //Функция разбивает число на "разряды" и возвращает объект
+            var object = {};
+            number = String(number);         //Превращаем число в строку
+            var array = number.split('');    //Создаём массив
+
+            if (array.length < 3) {          //Дополняем массив, если в нём менее 3 элементов
+                for (var i = 0; i < 3; i++) {
+                    array.unshift(0);
+                    if (array.length == 3) {
+                        break;
+                    }
+                }
+            }
+
+            object['Единицы'] = +array[2];
+            object['Десятки'] = +array[1];
+            object['Сотни'] = +array[0];
+
+            return object;
+        }
+
+
+        var answer = parseInt(prompt('Введите число от 0 до 999. -1 - авто-генерация'));
+        var obj = {};
+
+        if (answer > 999 || answer < -1) {
+            console.log('Вы ввели число вне заданого диапазона!');
+            console.log(obj);
+        } else if (isNaN(answer)) {
+            console.log('Некорректные данные!');
+        } else if (answer == -1) {
+            var random = Math.round(Math.random() * 1000);
+            console.log('Ваше число: ' + random);
+            console.log(distribution(random));
+        } else {
+            console.log('Ваше число: ' + answer);
+            console.log(distribution(answer));
+        }
+    </script>
+</body>
+</html>
