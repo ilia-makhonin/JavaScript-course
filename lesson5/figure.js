@@ -11,7 +11,7 @@ var black_figure = [
 var letters = [ "A", "B", "C", "D", "E", "F", "J", "H"];
 
 
-Figure(black_figure);
+Figure();
 
 function Figure() {
    
