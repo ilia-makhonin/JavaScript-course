@@ -14,15 +14,7 @@ var letters = [ "A", "B", "C", "D", "E", "F", "J", "H"];
 Figure(black_figure);
 
 function Figure() {
-    /*for (var i = 0; i < 8; i++) {
-        var position = letters[i] + 7;
-
-        var white = document.getElementById(position);
-        var img = document.createElement("img");
-        img.setAttribute("src", white_figure[0]);
-        white.appendChild(img);
-    }*/
-
+   
     for (var j = 0; j < 8; j++) {
         var num_position = j + 1;
 
