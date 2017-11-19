@@ -1,10 +1,9 @@
-/*window.onload = function() {
+window.onload = function() {
 
     ChessBoard();
 
-};*/
+};
 
-ChessBoard();
 
 function ChessBoard() {
                                             //Создаём тег TABLE
