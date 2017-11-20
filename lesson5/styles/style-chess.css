@@ -1,3 +1,8 @@
+@font-face {
+    font-family: gid-vr;
+    src: url(../font/gid_vr.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,14 +19,16 @@ body {
     margin-top: 20px;
 }
 #gambit {
-    width: 120px;
-    height: 35px;
+    width: 160px;
+    height: 45px;
     float: left;
     background-color: sandybrown;
     margin: 30px 10px;
     border-radius: 5px;
     border: 1px solid saddlebrown;
     outline: none;
+    font-family: gid-vr;
+    font-size: 22px;
 }
 
 #gambit:hover {
@@ -31,46 +38,62 @@ body {
 .chess-board {
     margin-top: 30px;
     margin-right: 70px;
+    background-color: olive;
     border: 1px solid black;
+    border-radius: 8px;
     float: right;
 }
 
 .cell-white {
     width: 70px;
     height: 70px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background-color: white;
+    border-radius: 8px;
 }
 
 .cell-black {
     width: 70px;
     height: 70px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     background-color: saddlebrown;
+    border-radius: 8px;
 }
 
 .side-markup {
     width: 30px;
     height: 70px;
+    background-color: lightgoldenrodyellow;
     border: 1px solid black;
-    font-size: 20px;
+    font-family: gid-vr;
+    font-size: 22px;
     text-align: center;
     vertical-align: middle;
+    border-radius: 8px;
 }
 
 .bottom-markup {
     width: 70px;
     height: 30px;
+    background-color: lightgoldenrodyellow;
     border: 1px solid black;
-    font-size: 20px;
+    font-family: gid-vr;
+    font-size: 22px;
     text-align: center;
     vertical-align: middle;
+    border-radius: 8px;
 }
 
 .angle {
     width: 30px;
     height: 30px;
+    background-color: lightgoldenrodyellow;
     border: 1px solid black;
+    border-radius: 8px;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 img {
