@@ -1,11 +1,11 @@
 var white_figure = [
-    "figure/white/pawn.png", "figure/white/rook.png", "figure/white/bishop.png",
-    "figure/white/knight.png", "figure/white/queen.png", "figure/white/king.png"
+    "img/figure/white/pawn.png", "img/figure/white/rook.png", "img/figure/white/bishop.png",
+    "img/figure/white/knight.png", "img/figure/white/queen.png", "img/figure/white/king.png"
 ];
 
 var black_figure = [
-    "figure/black/pawn.png", "figure/black/rook.png", "figure/black/bishop.png",
-    "figure/black/knight.png", "figure/black/queen.png", "figure/black/king.png"
+    "img/figure/black/pawn.png", "img/figure/black/rook.png", "img/figure/black/bishop.png",
+    "img/figure/black/knight.png", "img/figure/black/queen.png", "img/figure/black/king.png"
 ];
 
 var letters = [ "A", "B", "C", "D", "E", "F", "J", "H"];
