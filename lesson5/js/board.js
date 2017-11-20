@@ -21,7 +21,7 @@ function ChessBoard() {
 
         for (var j = 0; j < 10; j++) {
             if (i === 0 || i === 9) {
-                LettersRow(j, letters, row);
+                LettersRow(i, j, letters, row);
             } else {
                 BoardCell(i, j, row, letters);
             }
@@ -35,6 +35,9 @@ function BoardCell(i, j, row, letters) {
     if (j === 0 || j === 9) {
         var side_markup = document.createElement("td");
         side_markup.className = "side-markup";
+        if (j === 9) {
+            side_markup.classList.toggle("rotate");
+        }
         side_markup.innerText = 9 - i;
         row.appendChild(side_markup);
     } else {
@@ -44,14 +47,17 @@ function BoardCell(i, j, row, letters) {
 
                             //Создаём первую и последнюю строки с буквенными обозначениями столбцов
 
-function LettersRow(j, letters, row) {
+function LettersRow(i, j, letters, row) {
+    var bottom_markup = document.createElement("td");
     if (j === 0 || j === 9) {
         var angle = document.createElement("td");
         angle.className = "angle";
         row.appendChild(angle);
     } else {
-        var bottom_markup = document.createElement("td");
         bottom_markup.className ="bottom-markup";
+        if (i === 0) {
+            bottom_markup.classList.toggle("rotate");
+        }
         bottom_markup.innerText = letters[j];
         row.appendChild(bottom_markup);
     }
