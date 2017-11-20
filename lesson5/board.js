@@ -4,7 +4,6 @@ window.onload = function() {
 
 };
 
-
 function ChessBoard() {
                                             //Создаём тег TABLE
 
